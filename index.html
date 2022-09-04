@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel = "stylesheet" href = "index.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            .container {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+ input[type="radio"] {
+    margin-left:40px
+} 
+        </style>
+    </head>
+    <body>
+        <!-- <div class="form-check">
+            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+            <label class="form-check-label" for="exampleRadios1">
+              Default radio
+            </label>
+          </div> -->
+        <!-- <form>
+            
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form> -->
+        <!-- <form>
+            <div class = "form-row">
+                <div class = "col-md-4 mb-3">
+                    <h2><label for = "validationDefault01">Name</label></h2>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder=" " >
+                    </div>
+                    <small class = "form-text text-muted">First </small>
+                    <div class = "col-md-4 mb-3">
+                    <input type="text" class="form-control" id="validationDefault01" placeholder=" " >
+                    <small class = "form-text text-muted">Last </small>
+                    </div>
+                    
+                    </div>
+                
+            </div>
+        </form> -->
+        <form>
+            <div class="form-row">
+              <div class="col-md-4 ">
+               <h5><label for="name">Name </label><span class = "mandate">*</span></h5>
+
+                <input type="text" class="form-control" placeholder="First name" required = "true">
+                <small class="form-text text-muted">First</small>
+              </div>
+              
+              <div class="col-md-4 ">
+               <h5><label for = "name">Last Name</label><span class = "mandate">*</span></h5>
+                <input type="text" class="form-control" placeholder="Last name" required = "true">
+                <small class="form-text text-muted">Last</small>
+              </div>
+              <div class = "col-md-8">
+                <h5><label for="inputEmail4">Email</label><span class = "mandate">*</span></h5>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+              </div>
+              
+            </div>
+            <h5>Your experience</h5>
+            <div class="d-flex container align-self-start">
+                <div class = "checker">
+                <span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+              </div>
+              </div>
+              <p> Overall How would you rate your Experience with us?</p>
+              <h6>How satisfied are you likely with</h6>
+              <div class = "container ">
+                <div class = "row">
+                    <div class = "col-md-2">
+
+                    </div>
+                    <div class = "col-md-2">
+                        <p> very Unsatisfied</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Unsatisfied</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Neutral</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Satisfied</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Extremely Satisfied</p>
+                    </div>
+                </div>
+                <div class = "row new">
+                    <div class = "col-md-2 work">
+                        <p>Purchase</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2 work">
+                        <p>Service</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+                <div class = "row new">
+                    <div class = "col-md-2">
+                        <p>Company Overall</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+
+              </div>
+
+              <h6>How likely are you to </h6>
+              <div class = "container ">
+                <div class = "row">
+                    <div class = "col-md-2">
+
+                    </div>
+                    <div class = "col-md-2">
+                        <p> very Unlikely</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Unlikely</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Neutral</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>Likely</p>
+                    </div>
+                    <div class = "col-md-2">
+                        <p>very Likely</p>
+                    </div>
+                </div>
+                <div class = "row new">
+                    <div class = "col-md-2">
+                        <p>Buy from us again</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+                <div class = "row">
+                    <div class = "col-md-2">
+                        <p>Recommend our product to others</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+                <div class = "row new">
+                    <div class = "col-md-2">
+                        <p>Recommend our company to others</p>
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                    <div class = "col-md-2 form-check">
+                        <input class = "form-check-input " type="radio" name="blankRadio" id="blankRadio1" value = "option1" aria-label="...">
+                    </div>
+                </div>
+
+              </div>
+              <div class = "row">
+              <div class = "col-md-11">
+              <h5><label for="exampleFormControlTextarea1">Additional Comments and suggestions</label></h5>
+              <textarea class=" col-md-12 form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+              </div>
+              </div>
+              <div>
+              <button type="submit" class="btn btn-secondary mb-2">Submit</button>
+              </div>
+          </form> 
+    
+    
+    </body>
+</html>

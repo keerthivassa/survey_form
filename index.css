@@ -1,0 +1,22 @@
+ .checked {
+    display:flex;
+    justify-content: space-evenly;
+    
+    
+    color:orange;
+}
+/* .checker {
+    padding-right: 400px;
+}  */
+.new {
+    background-color: lightgray;
+}
+
+.mandate {
+    color:red;
+}
+
+
+
+
+  
